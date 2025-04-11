@@ -49,6 +49,7 @@ main {
 .weather-app-data {
   display: flex;
   justify-content: space-between;
+
 }
 
 .weather-app-city {
@@ -85,8 +86,10 @@ main {
 
 .weather-forecast {
   display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
+  justify-content: start;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
 }
 
 .weather-app-unit {
