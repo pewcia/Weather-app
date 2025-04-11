@@ -7,3 +7,4 @@ function handleSearchSubmit(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+  let apiKey = "bb203f4a92e7t89f33c44201bd2fbfoa";
