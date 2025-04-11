@@ -36,10 +36,11 @@ function formatDate(date) {
     minutes = `0${minutes}`;
   }
 
-return `${day} ${hours}:${minutes}`;
+  return `${day} ${hours}:${minutes}`;
 }
+
 function searchCity(city) {
-  let apiKey = "b203f4a92e7t89f33c44201bd2fbfoa";
+  let apiKey = "bb203f4a92e7t89f33c44201bd2fbfoa";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   axios.get(apiUrl).then(refreshWeather);
 }
@@ -54,4 +55,4 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Jasło");
+searchCity("Paris");
